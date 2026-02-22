@@ -2,12 +2,12 @@
 
 Landing page for SARI SOFTWARE TECNOLOGIES.
 
-**Live site:** [nexusclimate.github.io/sari](https://nexusclimate.github.io/sari)
+**Live site:** Deployed via Netlify (connect this repo in the Netlify dashboard).
 
 ## Working with the repo
 
 - **GitHub Desktop:** Open this folder in GitHub Desktop. Commit and push from the app.
-- **Pages:** Repo is set up to deploy on push to `main` via GitHub Actions. Enable **Settings → Pages → Source: GitHub Actions** if needed.
+- **Deploy:** The site is deployed via Netlify. GitHub Actions/Pages are not used, so no workflow runs on push.
 
 ## Project structure
 
