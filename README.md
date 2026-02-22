@@ -15,3 +15,7 @@ Landing page for SARI SOFTWARE TECNOLOGIES.
 - `styles.css` — layout and theme
 - `script.js` — nav behaviour
 - `assets/` — logo and images
+
+## Contact form
+
+The contact form uses [Netlify Forms](https://docs.netlify.com/forms/setup/). To receive submissions, deploy the site to Netlify (e.g. connect this repo in the Netlify dashboard). On GitHub Pages only, the form will not submit; use **contact@sari-software.com** in the meantime.

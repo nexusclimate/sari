@@ -9,5 +9,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Ignore nested clone (use repo root only)
+# Ignore nested/duplicate folders (use repo root only)
 sari/
+Untitled/

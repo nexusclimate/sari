@@ -17,7 +17,7 @@
         <svg class="logo-svg" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="28" cy="28" r="26" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
           <circle cx="28" cy="28" r="20" stroke="white" stroke-width="1"/>
-          <circle cx="28" cy="28" r="16" fill="#344556"/>
+          <circle cx="28" cy="28" r="16" fill="#1e262f"/>
           <text x="28" y="32" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-weight="700" font-size="14">SST</text>
         </svg>
         <span class="logo-text">SARI SOFTWARE<br>TECNOLOGIES</span>
@@ -26,6 +26,7 @@
         <li><a href="#business">Business</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -34,19 +35,18 @@
     <section class="hero">
       <div class="hero-inner">
         <h1 class="hero-title">SARI SOFTWARE TECNOLOGIES</h1>
-        <p class="hero-tagline">Software design, digital products, and lifestyle development.</p>
+        <p class="hero-tagline">We build software and systems that move the needle—from product and platform to lifestyle and leadership.</p>
       </div>
     </section>
 
     <section id="business" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Business activities</h2>
-        <p class="section-intro">We design systems, build software, and support lifestyle development—aligned with our registered business activities.</p>
+        <p class="section-intro">Registered scope: we design systems, run a software house, and deliver lifestyle development consultancy—focused on outcomes, not overhead.</p>
         <ul class="activity-list">
           <li>Computer Systems and Software Designing</li>
           <li>Software House</li>
           <li>Lifestyle Development Consultancy</li>
-          <li>Brief description of what you build</li>
         </ul>
       </div>
     </section>
@@ -54,7 +54,7 @@
     <section id="services" class="section">
       <div class="container">
         <h2 class="section-title">Services & products</h2>
-        <p class="section-intro">We deliver subscription and digital solutions built for clarity and outcomes.</p>
+        <p class="section-intro">Where we create value: subscription platforms, digital coaching, and AI-enabled tools—built to scale with you.</p>
         <div class="cards">
           <article class="card">
             <h3>Subscription-based mobile software platform</h3>
@@ -72,10 +72,11 @@
       </div>
     </section>
 
-    <section id="projects" class="section section-alt">
+    <section id="projects" class="section section-projects">
+      <div class="projects-bg" aria-hidden="true"></div>
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <p class="section-intro">Products we build and support.</p>
+        <p class="section-intro">Products we ship and stand behind.</p>
         <div class="cards">
           <article class="card card-project">
             <h3>PHAXIUS</h3>
@@ -85,18 +86,56 @@
         </div>
       </div>
     </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">Partnerships, projects, or a quick conversation—reach out.</p>
+        <div class="contact-grid">
+          <div class="contact-form-wrap">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="form-field">
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p class="form-field">
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p class="form-field">
+                <label>Your Role: <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select></label>
+              </p>
+              <p class="form-field">
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p class="form-actions">
+                <button type="submit" class="btn-submit">Send</button>
+              </p>
+            </form>
+          </div>
+          <div class="contact-details">
+            <p class="contact-email">
+              <strong>Email</strong><br>
+              <a href="mailto:contact@sari-software.com">contact@sari-software.com</a>
+            </p>
+            <p class="contact-address">
+              <strong>Address</strong><br>
+              VUPR1327<br>
+              Compass Building – Al Hulaila<br>
+              Al Hulaila Industrial Zone – FZ<br>
+              Ras Al Khaimah<br>
+              United Arab Emirates
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-address">
-        <p><strong>SARI SOFTWARE TECNOLOGIES</strong></p>
-        <p>VUPR1327<br>
-        Compass Building – Al Hulaila<br>
-        Al Hulaila Industrial Zone – FZ<br>
-        Ras Al Khaimah<br>
-        United Arab Emirates</p>
-      </div>
       <p class="footer-copy">© 2026 SARI SOFTWARE TECNOLOGIES</p>
     </div>
   </footer>
