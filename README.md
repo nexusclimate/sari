@@ -2,28 +2,16 @@
 
 Landing page for SARI SOFTWARE TECNOLOGIES.
 
-## Push to GitHub and go live
+**Live site:** [nexusclimate.github.io/sari](https://nexusclimate.github.io/sari)
 
-1. **Create a new repo on GitHub**
-   - Go to [github.com/new](https://github.com/new)
-   - Repository name: `sari` (or e.g. `sari-software`)
-   - Leave “Add a README” unchecked (you already have one)
-   - Create repository
+## Working with the repo
 
-2. **Push this folder**
-   ```bash
-   cd /Users/bastiaansenj/Library/CloudStorage/ProtonDrive-Jaap@jb-email.me-folder/Github/sari
-   git remote add origin https://github.com/YOUR_USERNAME/sari.git
-   git push -u origin main
-   ```
-   Replace `YOUR_USERNAME` with your GitHub username (and `sari` with the repo name if different).
+- **GitHub Desktop:** Open this folder in GitHub Desktop. Commit and push from the app.
+- **Pages:** Repo is set up to deploy on push to `main` via GitHub Actions. Enable **Settings → Pages → Source: GitHub Actions** if needed.
 
-3. **Turn on GitHub Pages**
-   - In the repo: **Settings** → **Pages**
-   - Under **Build and deployment**, **Source** choose **GitHub Actions**
-   - Save (the workflow in `.github/workflows/pages.yml` will run on every push to `main`)
+## Project structure
 
-4. **Your site**
-   - After the first push and once the workflow finishes:  
-     **https://YOUR_USERNAME.github.io/sari/**  
-   - (If you used a different repo name, replace `sari` in the URL.)
+- `index.html` — main page
+- `styles.css` — layout and theme
+- `script.js` — nav behaviour
+- `assets/` — logo and images
