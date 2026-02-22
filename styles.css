@@ -1,0 +1,288 @@
+/* SARI SOFTWARE TECNOLOGIES – Landing page
+   Colour scheme: blue-gray background, white text (from logo/brand) */
+
+:root {
+  --bg-primary: #3d4f63;
+  --bg-secondary: #344556;
+  --text-primary: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.85);
+  --accent: #6b8aa3;
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --font: 'DM Sans', system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header & nav */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-wrap:hover {
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.logo-svg {
+  display: none;
+  flex-shrink: 0;
+  color: var(--bg-secondary);
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero-tagline {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+/* Sections */
+.section {
+  padding: 3.5rem 1.5rem;
+}
+
+.section-alt {
+  background-color: var(--bg-secondary);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.section-intro {
+  margin: 0 0 2rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* Business activities list */
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-list li {
+  position: relative;
+  padding: 0.6rem 0 0.6rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.activity-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.activity-list li:last-child {
+  border-bottom: none;
+}
+
+/* Cards (services & projects) */
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.card-link:hover {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.card-project .card-link {
+  margin-top: 0.75rem;
+}
+
+/* Footer */
+.footer {
+  padding: 2.5rem 1.5rem;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+}
+
+.footer .container {
+  max-width: 1100px;
+  text-align: center;
+}
+
+.footer-address {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.footer-address strong {
+  color: var(--text-primary);
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+}
