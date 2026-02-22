@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <a href="#" class="logo-wrap">
+      <a href="index.html" class="logo-wrap">
         <img src="assets/logo.png" alt="SARI SOFTWARE TECNOLOGIES" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         <svg class="logo-svg" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="28" cy="28" r="26" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
@@ -26,7 +26,7 @@
         <li><a href="#business">Business</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -42,31 +42,41 @@
     <section id="business" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Business activities</h2>
-        <p class="section-intro">Registered scope: we design systems, run a software house, and deliver lifestyle development consultancy—focused on outcomes, not overhead.</p>
-        <ul class="activity-list">
-          <li>Computer Systems and Software Designing</li>
-          <li>Software House</li>
-          <li>Lifestyle Development Consultancy</li>
-        </ul>
+        <p class="section-intro">SaRi operates as a technology-focused software development company, designing and building intelligent digital systems powered by advanced data and artificial intelligence methodologies.</p>
+        <h3 class="core-activities-title">Core Activities</h3>
+        <div class="activity-cards">
+          <article class="activity-card">
+            <h4>Computer Systems and Software Designing</h4>
+            <p>Design, architecture, and engineering of scalable software platforms, cloud-based systems, and digital infrastructure solutions.</p>
+          </article>
+          <article class="activity-card">
+            <h4>Software House</h4>
+            <p>Development, deployment, and maintenance of proprietary software products and custom applications, with a strong emphasis on AI-enabled automation, analytics, and decision-support systems.</p>
+          </article>
+          <article class="activity-card">
+            <h4>Lifestyle Development Consultancy</h4>
+            <p>Advisory services focused on leveraging technology, behavioural science, and AI-driven tools to enhance personal and organisational performance outcomes.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
         <h2 class="section-title">Services & products</h2>
-        <p class="section-intro">Where we create value: subscription platforms, digital coaching, and AI-enabled tools—built to scale with you.</p>
+        <p class="section-intro">Where we create value: scalable subscription platforms, digital coaching systems, and AI-native tools designed to improve performance, clarity, and decision-making.</p>
         <div class="cards">
           <article class="card">
-            <h3>Subscription-based mobile software platform</h3>
-            <p>Recurring-access mobile products that grow with your usage and needs.</p>
+            <h3>Subscription-Based Mobile Platform</h3>
+            <p>Recurring-access mobile software built for continuous engagement, adaptive learning, and long-term user growth.</p>
           </article>
           <article class="card">
-            <h3>Digital coaching application</h3>
-            <p>Structured coaching and guidance delivered through a dedicated digital application.</p>
+            <h3>Digital Coaching Application</h3>
+            <p>Structured, outcome-driven coaching delivered through an intelligent, always-on digital environment.</p>
           </article>
           <article class="card">
-            <h3>AI-enabled digital tools</h3>
-            <p>Tools that combine context, memory, and AI to improve decision quality and workflows.</p>
+            <h3>AI-Enabled Tools</h3>
+            <p>Context-aware tools that combine data, memory, and applied AI to enhance workflows, insight generation, and decision quality.</p>
           </article>
         </div>
       </div>
@@ -87,51 +97,6 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container contact-container">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-intro">Partnerships, projects, or a quick conversation—reach out.</p>
-        <div class="contact-grid">
-          <div class="contact-form-wrap">
-            <form class="contact-form" name="contact" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
-              <p class="form-field">
-                <label>Your Name: <input type="text" name="name" /></label>
-              </p>
-              <p class="form-field">
-                <label>Your Email: <input type="email" name="email" /></label>
-              </p>
-              <p class="form-field">
-                <label>Your Role: <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select></label>
-              </p>
-              <p class="form-field">
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p class="form-actions">
-                <button type="submit" class="btn-submit">Send</button>
-              </p>
-            </form>
-          </div>
-          <div class="contact-details">
-            <p class="contact-email">
-              <strong>Email</strong><br>
-              <a href="mailto:contact@sari-software.com">contact@sari-software.com</a>
-            </p>
-            <p class="contact-address">
-              <strong>Address</strong><br>
-              VUPR1327<br>
-              Compass Building – Al Hulaila<br>
-              Al Hulaila Industrial Zone – FZ<br>
-              Ras Al Khaimah<br>
-              United Arab Emirates
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">

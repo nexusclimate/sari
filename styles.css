@@ -6,6 +6,9 @@
   --bg-primary: #161c26;
   --bg-secondary: #0f1419;
   --bg-elevated: #1e262f;
+  /* Blue-grey for sections/cards (business-card feel) */
+  --bg-alt: #1f2937;
+  --bg-card: #252d3a;
   /* Greyscale – marble/stone mid-tones */
   --grey-charcoal: #2a323d;
   --grey-slate: #3d4754;
@@ -20,8 +23,8 @@
   --accent-hover: #7dd4ed;
   --accent-glow: rgba(94, 184, 212, 0.25);
   /* Surfaces */
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.09);
+  --card-bg: var(--bg-card);
+  --card-border: rgba(255, 255, 255, 0.1);
   --border: rgba(255, 255, 255, 0.1);
   --input-bg: rgba(255, 255, 255, 0.06);
   --input-border: rgba(255, 255, 255, 0.14);
@@ -164,7 +167,7 @@ a:hover {
 }
 
 .section-alt {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-alt);
 }
 
 /* Projects – background image (classical/tech art) + overlay */
@@ -212,32 +215,46 @@ a:hover {
   max-width: 56ch;
 }
 
-/* Business activities list */
-.activity-list {
-  list-style: none;
+/* Business – Core Activities cards */
+.core-activities-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.activity-cards {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.activity-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.activity-card:hover {
+  background: var(--bg-elevated);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.activity-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.activity-card p {
   margin: 0;
-  padding: 0;
-}
-
-.activity-list li {
-  position: relative;
-  padding: 0.75rem 0 0.75rem 1.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.activity-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 1.1rem;
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-
-.activity-list li:last-child {
-  border-bottom: none;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-muted);
 }
 
 /* Cards (services & projects) */
@@ -256,8 +273,8 @@ a:hover {
 }
 
 .card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: var(--bg-elevated);
+  border-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
 
@@ -300,9 +317,14 @@ a:hover {
   border-color: rgba(94, 184, 212, 0.25);
 }
 
-/* Contact section */
+/* Contact section & page */
 .contact-section {
-  background: var(--bg-secondary);
+  background: var(--bg-alt);
+}
+
+.contact-page {
+  padding-top: 4rem;
+  min-height: 60vh;
 }
 
 .contact-container {

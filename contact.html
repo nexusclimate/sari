@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SARI SOFTWARE TECNOLOGIES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo-wrap">
+        <img src="assets/logo.png" alt="SARI SOFTWARE TECNOLOGIES" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <svg class="logo-svg" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="28" cy="28" r="26" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="28" cy="28" r="20" stroke="white" stroke-width="1"/>
+          <circle cx="28" cy="28" r="16" fill="#1e262f"/>
+          <text x="28" y="32" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-weight="700" font-size="14">SST</text>
+        </svg>
+        <span class="logo-text">SARI SOFTWARE<br>TECNOLOGIES</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#business">Business</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-section contact-page">
+      <div class="container contact-container">
+        <h1 class="section-title">Contact</h1>
+        <p class="section-intro">Partnerships, projects, or a quick conversation—reach out.</p>
+        <div class="contact-grid">
+          <div class="contact-form-wrap">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="form-field">
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p class="form-field">
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p class="form-field">
+                <label>Your Role: <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select></label>
+              </p>
+              <p class="form-field">
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p class="form-actions">
+                <button type="submit" class="btn-submit">Send</button>
+              </p>
+            </form>
+          </div>
+          <div class="contact-details">
+            <p class="contact-email">
+              <strong>Email</strong><br>
+              <a href="mailto:contact@sari-software.com">contact@sari-software.com</a>
+            </p>
+            <p class="contact-address">
+              <strong>Address</strong><br>
+              VUPR1327<br>
+              Compass Building – Al Hulaila<br>
+              Al Hulaila Industrial Zone – FZ<br>
+              Ras Al Khaimah<br>
+              United Arab Emirates
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-copy">© 2026 SARI SOFTWARE TECNOLOGIES</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
