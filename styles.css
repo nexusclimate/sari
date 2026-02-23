@@ -177,32 +177,6 @@ a:hover {
   background-color: var(--bg-alt);
 }
 
-/* Projects – background image (classical/tech art) + overlay */
-.section-projects {
-  position: relative;
-  background-color: var(--bg-secondary);
-}
-
-.projects-bg {
-  position: absolute;
-  inset: 0;
-  background: var(--bg-secondary) url("assets/projects-bg.png") center / cover no-repeat;
-  z-index: 0;
-}
-
-.projects-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(105deg, rgba(15, 20, 25, 0.88) 0%, rgba(15, 20, 25, 0.72) 45%, rgba(15, 20, 25, 0.85) 100%);
-  z-index: 1;
-}
-
-.section-projects .container {
-  position: relative;
-  z-index: 2;
-}
-
 .container {
   max-width: 920px;
   margin: 0 auto;
@@ -310,20 +284,6 @@ a:hover {
 .card-link:hover {
   text-decoration: none;
   color: var(--accent-hover);
-}
-
-.card-project .card-link {
-  margin-top: 0.75rem;
-}
-
-.section-projects .card {
-  background: rgba(15, 20, 25, 0.85);
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-.section-projects .card:hover {
-  background: rgba(22, 28, 38, 0.9);
-  border-color: rgba(94, 184, 212, 0.25);
 }
 
 /* Contact section & page */
@@ -511,10 +471,6 @@ a:hover {
 
   .contact-details {
     order: -1;
-  }
-
-  .section-projects .card {
-    margin: 0;
   }
 }
 
